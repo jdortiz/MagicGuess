@@ -14,6 +14,7 @@
 		CF21E2A91BAB46FC008868A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF21E2A81BAB46FC008868A8 /* Images.xcassets */; };
 		CF21E2AC1BAB46FC008868A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF21E2AA1BAB46FC008868A8 /* LaunchScreen.xib */; };
 		CF21E2B81BAB46FC008868A8 /* MagicGuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E2B71BAB46FC008868A8 /* MagicGuessTests.m */; };
+		CF21E2C51BAB5CFD008868A8 /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E2C41BAB5CFD008868A8 /* CanvasView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		CF21E2B11BAB46FC008868A8 /* MagicGuessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicGuessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF21E2B61BAB46FC008868A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF21E2B71BAB46FC008868A8 /* MagicGuessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicGuessTests.m; sourceTree = "<group>"; };
+		CF21E2C31BAB5CFD008868A8 /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		CF21E2C41BAB5CFD008868A8 /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +84,12 @@
 		CF21E29A1BAB46FC008868A8 /* MagicGuess */ = {
 			isa = PBXGroup;
 			children = (
-				CF21E29F1BAB46FC008868A8 /* AppDelegate.h */,
-				CF21E2A01BAB46FC008868A8 /* AppDelegate.m */,
-				CF21E2A21BAB46FC008868A8 /* ViewController.h */,
-				CF21E2A31BAB46FC008868A8 /* ViewController.m */,
+				CF21E2C21BAB5CD1008868A8 /* AppDelegate */,
+				CF21E2C11BAB5CC2008868A8 /* ViewControllers */,
+				CF21E2C61BAB5D04008868A8 /* Views */,
 				CF21E2A51BAB46FC008868A8 /* Main.storyboard */,
-				CF21E2A81BAB46FC008868A8 /* Images.xcassets */,
 				CF21E2AA1BAB46FC008868A8 /* LaunchScreen.xib */,
+				CF21E2A81BAB46FC008868A8 /* Images.xcassets */,
 				CF21E29B1BAB46FC008868A8 /* Supporting Files */,
 			);
 			path = MagicGuess;
@@ -117,6 +119,33 @@
 				CF21E2B61BAB46FC008868A8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF21E2C11BAB5CC2008868A8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF21E2A21BAB46FC008868A8 /* ViewController.h */,
+				CF21E2A31BAB46FC008868A8 /* ViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF21E2C21BAB5CD1008868A8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CF21E29F1BAB46FC008868A8 /* AppDelegate.h */,
+				CF21E2A01BAB46FC008868A8 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CF21E2C61BAB5D04008868A8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF21E2C31BAB5CFD008868A8 /* CanvasView.h */,
+				CF21E2C41BAB5CFD008868A8 /* CanvasView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +250,7 @@
 			files = (
 				CF21E2A41BAB46FC008868A8 /* ViewController.m in Sources */,
 				CF21E2A11BAB46FC008868A8 /* AppDelegate.m in Sources */,
+				CF21E2C51BAB5CFD008868A8 /* CanvasView.m in Sources */,
 				CF21E29E1BAB46FC008868A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
