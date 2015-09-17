@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF21E29E1BAB46FC008868A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E29D1BAB46FC008868A8 /* main.m */; };
+		CF21E2A11BAB46FC008868A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E2A01BAB46FC008868A8 /* AppDelegate.m */; };
+		CF21E2A41BAB46FC008868A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E2A31BAB46FC008868A8 /* ViewController.m */; };
+		CF21E2A71BAB46FC008868A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF21E2A51BAB46FC008868A8 /* Main.storyboard */; };
+		CF21E2A91BAB46FC008868A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF21E2A81BAB46FC008868A8 /* Images.xcassets */; };
+		CF21E2AC1BAB46FC008868A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF21E2AA1BAB46FC008868A8 /* LaunchScreen.xib */; };
+		CF21E2B81BAB46FC008868A8 /* MagicGuessTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E2B71BAB46FC008868A8 /* MagicGuessTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF21E2B21BAB46FC008868A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF21E2901BAB46FC008868A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF21E2971BAB46FC008868A8;
+			remoteInfo = MagicGuess;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF21E2981BAB46FC008868A8 /* MagicGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF21E29C1BAB46FC008868A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF21E29D1BAB46FC008868A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF21E29F1BAB46FC008868A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF21E2A01BAB46FC008868A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF21E2A21BAB46FC008868A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF21E2A31BAB46FC008868A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF21E2A61BAB46FC008868A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF21E2A81BAB46FC008868A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF21E2AB1BAB46FC008868A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CF21E2B11BAB46FC008868A8 /* MagicGuessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicGuessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF21E2B61BAB46FC008868A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF21E2B71BAB46FC008868A8 /* MagicGuessTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MagicGuessTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF21E2951BAB46FC008868A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF21E2AE1BAB46FC008868A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF21E28F1BAB46FC008868A8 = {
+			isa = PBXGroup;
+			children = (
+				CF21E29A1BAB46FC008868A8 /* MagicGuess */,
+				CF21E2B41BAB46FC008868A8 /* MagicGuessTests */,
+				CF21E2991BAB46FC008868A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF21E2991BAB46FC008868A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF21E2981BAB46FC008868A8 /* MagicGuess.app */,
+				CF21E2B11BAB46FC008868A8 /* MagicGuessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF21E29A1BAB46FC008868A8 /* MagicGuess */ = {
+			isa = PBXGroup;
+			children = (
+				CF21E29F1BAB46FC008868A8 /* AppDelegate.h */,
+				CF21E2A01BAB46FC008868A8 /* AppDelegate.m */,
+				CF21E2A21BAB46FC008868A8 /* ViewController.h */,
+				CF21E2A31BAB46FC008868A8 /* ViewController.m */,
+				CF21E2A51BAB46FC008868A8 /* Main.storyboard */,
+				CF21E2A81BAB46FC008868A8 /* Images.xcassets */,
+				CF21E2AA1BAB46FC008868A8 /* LaunchScreen.xib */,
+				CF21E29B1BAB46FC008868A8 /* Supporting Files */,
+			);
+			path = MagicGuess;
+			sourceTree = "<group>";
+		};
+		CF21E29B1BAB46FC008868A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF21E29C1BAB46FC008868A8 /* Info.plist */,
+				CF21E29D1BAB46FC008868A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF21E2B41BAB46FC008868A8 /* MagicGuessTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF21E2B71BAB46FC008868A8 /* MagicGuessTests.m */,
+				CF21E2B51BAB46FC008868A8 /* Supporting Files */,
+			);
+			path = MagicGuessTests;
+			sourceTree = "<group>";
+		};
+		CF21E2B51BAB46FC008868A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF21E2B61BAB46FC008868A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF21E2971BAB46FC008868A8 /* MagicGuess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF21E2BB1BAB46FC008868A8 /* Build configuration list for PBXNativeTarget "MagicGuess" */;
+			buildPhases = (
+				CF21E2941BAB46FC008868A8 /* Sources */,
+				CF21E2951BAB46FC008868A8 /* Frameworks */,
+				CF21E2961BAB46FC008868A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MagicGuess;
+			productName = MagicGuess;
+			productReference = CF21E2981BAB46FC008868A8 /* MagicGuess.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF21E2B01BAB46FC008868A8 /* MagicGuessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF21E2BE1BAB46FC008868A8 /* Build configuration list for PBXNativeTarget "MagicGuessTests" */;
+			buildPhases = (
+				CF21E2AD1BAB46FC008868A8 /* Sources */,
+				CF21E2AE1BAB46FC008868A8 /* Frameworks */,
+				CF21E2AF1BAB46FC008868A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF21E2B31BAB46FC008868A8 /* PBXTargetDependency */,
+			);
+			name = MagicGuessTests;
+			productName = MagicGuessTests;
+			productReference = CF21E2B11BAB46FC008868A8 /* MagicGuessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF21E2901BAB46FC008868A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = powwau;
+				TargetAttributes = {
+					CF21E2971BAB46FC008868A8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CF21E2B01BAB46FC008868A8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CF21E2971BAB46FC008868A8;
+					};
+				};
+			};
+			buildConfigurationList = CF21E2931BAB46FC008868A8 /* Build configuration list for PBXProject "MagicGuess" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF21E28F1BAB46FC008868A8;
+			productRefGroup = CF21E2991BAB46FC008868A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF21E2971BAB46FC008868A8 /* MagicGuess */,
+				CF21E2B01BAB46FC008868A8 /* MagicGuessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF21E2961BAB46FC008868A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF21E2A71BAB46FC008868A8 /* Main.storyboard in Resources */,
+				CF21E2AC1BAB46FC008868A8 /* LaunchScreen.xib in Resources */,
+				CF21E2A91BAB46FC008868A8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF21E2AF1BAB46FC008868A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF21E2941BAB46FC008868A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF21E2A41BAB46FC008868A8 /* ViewController.m in Sources */,
+				CF21E2A11BAB46FC008868A8 /* AppDelegate.m in Sources */,
+				CF21E29E1BAB46FC008868A8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF21E2AD1BAB46FC008868A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF21E2B81BAB46FC008868A8 /* MagicGuessTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF21E2B31BAB46FC008868A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF21E2971BAB46FC008868A8 /* MagicGuess */;
+			targetProxy = CF21E2B21BAB46FC008868A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF21E2A51BAB46FC008868A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF21E2A61BAB46FC008868A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF21E2AA1BAB46FC008868A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF21E2AB1BAB46FC008868A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF21E2B91BAB46FC008868A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF21E2BA1BAB46FC008868A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF21E2BC1BAB46FC008868A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MagicGuess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF21E2BD1BAB46FC008868A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MagicGuess/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF21E2BF1BAB46FC008868A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MagicGuessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicGuess.app/MagicGuess";
+			};
+			name = Debug;
+		};
+		CF21E2C01BAB46FC008868A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MagicGuessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicGuess.app/MagicGuess";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF21E2931BAB46FC008868A8 /* Build configuration list for PBXProject "MagicGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF21E2B91BAB46FC008868A8 /* Debug */,
+				CF21E2BA1BAB46FC008868A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF21E2BB1BAB46FC008868A8 /* Build configuration list for PBXNativeTarget "MagicGuess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF21E2BC1BAB46FC008868A8 /* Debug */,
+				CF21E2BD1BAB46FC008868A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF21E2BE1BAB46FC008868A8 /* Build configuration list for PBXNativeTarget "MagicGuessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF21E2BF1BAB46FC008868A8 /* Debug */,
+				CF21E2C01BAB46FC008868A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF21E2901BAB46FC008868A8 /* Project object */;
+}
