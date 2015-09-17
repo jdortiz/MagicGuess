@@ -26,4 +26,11 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
+#pragma mark - UI Actions
+
+- (IBAction)clearCanvas:(id)sender {
+    [self.canvasView clear];
+}
+
 @end

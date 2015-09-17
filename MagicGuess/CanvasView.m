@@ -10,14 +10,74 @@
 #import "CanvasView.h"
 
 
+@interface CanvasView ()
+
+@property (strong, nonatomic) UIBezierPath *bezierPath;
+
+@end
+
+
+
 @implementation CanvasView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+#pragma mark - Constants & Parameters
+
+const CGFloat defaultLineWidth = 4.0;
+
+#pragma mark - Initializer
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self setUpBezierPath];
+    }
+    return self;
 }
-*/
+
+
+- (void) setUpBezierPath {
+    _bezierPath = [UIBezierPath bezierPath];
+    _bezierPath.lineWidth = defaultLineWidth;
+}
+
+
+#pragma mark - UI Actions
+
+- (void) clear {
+    [self.bezierPath removeAllPoints];
+    [self setNeedsDisplay];
+}
+
+
+#pragma mark - Custom drawing
+
+- (void) drawRect:(CGRect)rect {
+    [[UIColor darkGrayColor] setStroke];
+    [self.bezierPath stroke];
+}
+
+
+#pragma mark - Touch handling
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    [self.bezierPath moveToPoint:[touch locationInView:self]];
+}
+
+
+- (void) touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = [touches anyObject];
+    [self.bezierPath addLineToPoint:[touch locationInView:self]];
+    [self setNeedsDisplay];
+}
+
+
+- (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self touchesMoved:touches withEvent:event];
+}
+
+
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self touchesMoved:touches withEvent:event];
+}
 
 @end

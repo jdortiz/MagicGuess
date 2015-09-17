@@ -12,4 +12,6 @@
 
 @interface CanvasView : UIView
 
+- (void) clear;
+
 @end
