@@ -13,6 +13,7 @@
 @interface CanvasView ()
 
 @property (strong, nonatomic) UIBezierPath *bezierPath;
+@property (strong, nonatomic) NSFileManager *fileManager;
 
 @end
 
@@ -44,6 +45,7 @@ const CGFloat defaultLineWidth = 4.0;
 
 - (void) clear {
     [self.bezierPath removeAllPoints];
+    [self loadPathForSuit:3];
     [self setNeedsDisplay];
 }
 
@@ -78,6 +80,54 @@ const CGFloat defaultLineWidth = 4.0;
 
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
     [self touchesMoved:touches withEvent:event];
+}
+
+
+#pragma mark - Save and restore Bezier paths
+
+- (void) saveCurrentPath {
+    NSDateFormatter *dateFormatter = [NSDateFormatter new];
+    [dateFormatter setDateFormat:@"yyyyMMddhhmmss"];
+
+    NSURL *fileURL = [[[self.fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject] URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.path", [dateFormatter stringFromDate:[NSDate date]]]];
+    [NSKeyedArchiver archiveRootObject:self.bezierPath toFile:[fileURL path]];
+    
+}
+
+
+- (void) loadPathForSuit:(NSUInteger)suit {
+    NSString *suitString;
+    switch (suit) {
+        case 0:
+            suitString = @"Spade";
+            break;
+        case 1:
+            suitString = @"Diamond";
+            break;
+        case 2:
+            suitString = @"Heart";
+            break;
+        case 3:
+            suitString = @"Club";
+            break;
+            
+        default:
+            break;
+    }
+    NSURL *fileURL = [[[self.fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject] URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.path", suitString]];
+    self.bezierPath = [NSKeyedUnarchiver unarchiveObjectWithFile:[fileURL path]];
+}
+
+
+
+#pragma mark - Lazy instanciation
+
+- (NSFileManager *) fileManager {
+    if (_fileManager == nil) {
+        _fileManager = [NSFileManager defaultManager];
+    }
+    
+    return _fileManager;
 }
 
 @end
