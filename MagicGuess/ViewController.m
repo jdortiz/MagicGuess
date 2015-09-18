@@ -9,11 +9,14 @@
 
 #import "ViewController.h"
 #import "CanvasView.h"
+#import "MotionController.h"
+
 
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet CanvasView *canvasView;
+@property (strong, nonatomic) MotionController *motionController;
 
 @end
 
@@ -21,15 +24,28 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+
+- (void) viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.motionController = [[MotionController alloc] init];
+}
+
+
+- (void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.motionController startMeasuringPosition];
+}
+
+
+- (void) viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [self.motionController stopMeasuringPosition];
 }
 
 
 #pragma mark - UI Actions
 
-- (IBAction)clearCanvas:(id)sender {
+- (IBAction) clearCanvas:(id)sender {
     [self.canvasView clear];
 }
 

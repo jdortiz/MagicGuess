@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0C280D1BAB92D2003E0302 /* MotionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0C280C1BAB92D2003E0302 /* MotionController.m */; };
+		CF0C28101BAB9406003E0302 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF0C280F1BAB9406003E0302 /* CoreMotion.framework */; };
 		CF21E29E1BAB46FC008868A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E29D1BAB46FC008868A8 /* main.m */; };
 		CF21E2A11BAB46FC008868A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E2A01BAB46FC008868A8 /* AppDelegate.m */; };
 		CF21E2A41BAB46FC008868A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF21E2A31BAB46FC008868A8 /* ViewController.m */; };
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF0C280B1BAB92D2003E0302 /* MotionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionController.h; sourceTree = "<group>"; };
+		CF0C280C1BAB92D2003E0302 /* MotionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionController.m; sourceTree = "<group>"; };
+		CF0C280F1BAB9406003E0302 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		CF21E2981BAB46FC008868A8 /* MagicGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF21E29C1BAB46FC008868A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF21E29D1BAB46FC008868A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0C28101BAB9406003E0302 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +69,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0C280E1BAB92D9003E0302 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF0C280B1BAB92D2003E0302 /* MotionController.h */,
+				CF0C280C1BAB92D2003E0302 /* MotionController.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CF0C28111BAB940C003E0302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF0C280F1BAB9406003E0302 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF21E28F1BAB46FC008868A8 = {
 			isa = PBXGroup;
 			children = (
+				CF0C28111BAB940C003E0302 /* Frameworks */,
 				CF21E29A1BAB46FC008868A8 /* MagicGuess */,
 				CF21E2B41BAB46FC008868A8 /* MagicGuessTests */,
 				CF21E2991BAB46FC008868A8 /* Products */,
@@ -87,6 +111,7 @@
 				CF21E2C21BAB5CD1008868A8 /* AppDelegate */,
 				CF21E2C11BAB5CC2008868A8 /* ViewControllers */,
 				CF21E2C61BAB5D04008868A8 /* Views */,
+				CF0C280E1BAB92D9003E0302 /* Model */,
 				CF21E2A51BAB46FC008868A8 /* Main.storyboard */,
 				CF21E2AA1BAB46FC008868A8 /* LaunchScreen.xib */,
 				CF21E2A81BAB46FC008868A8 /* Images.xcassets */,
@@ -251,6 +276,7 @@
 				CF21E2A41BAB46FC008868A8 /* ViewController.m in Sources */,
 				CF21E2A11BAB46FC008868A8 /* AppDelegate.m in Sources */,
 				CF21E2C51BAB5CFD008868A8 /* CanvasView.m in Sources */,
+				CF0C280D1BAB92D2003E0302 /* MotionController.m in Sources */,
 				CF21E29E1BAB46FC008868A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +472,7 @@
 				CF21E2BD1BAB46FC008868A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF21E2BE1BAB46FC008868A8 /* Build configuration list for PBXNativeTarget "MagicGuessTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +481,7 @@
 				CF21E2C01BAB46FC008868A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
