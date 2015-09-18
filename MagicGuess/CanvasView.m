@@ -45,7 +45,6 @@ const CGFloat defaultLineWidth = 4.0;
 
 - (void) clear {
     [self.bezierPath removeAllPoints];
-    [self loadPathForSuit:3];
     [self setNeedsDisplay];
 }
 
@@ -95,27 +94,26 @@ const CGFloat defaultLineWidth = 4.0;
 }
 
 
-- (void) loadPathForSuit:(NSUInteger)suit {
+- (void) loadPathForSuit:(Suit)suit {
     NSString *suitString;
+    [self.bezierPath removeAllPoints];
     switch (suit) {
-        case 0:
+        case SuitSpade:
             suitString = @"Spade";
             break;
-        case 1:
+        case SuitDiamond:
             suitString = @"Diamond";
             break;
-        case 2:
+        case SuitHeart:
             suitString = @"Heart";
             break;
-        case 3:
+        case SuitClub:
             suitString = @"Club";
-            break;
-            
-        default:
             break;
     }
     NSURL *fileURL = [[[self.fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject] URLByAppendingPathComponent:[NSString stringWithFormat:@"%@.path", suitString]];
     self.bezierPath = [NSKeyedUnarchiver unarchiveObjectWithFile:[fileURL path]];
+    [self setNeedsDisplay];
 }
 
 

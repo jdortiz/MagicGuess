@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MotionController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MotionControllerResultsDelegate>
 
 
 @end

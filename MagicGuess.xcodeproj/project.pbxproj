@@ -33,6 +33,7 @@
 		CF0C280B1BAB92D2003E0302 /* MotionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotionController.h; sourceTree = "<group>"; };
 		CF0C280C1BAB92D2003E0302 /* MotionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotionController.m; sourceTree = "<group>"; };
 		CF0C280F1BAB9406003E0302 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		CF0C28121BABA088003E0302 /* Suites.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Suites.h; sourceTree = "<group>"; };
 		CF21E2981BAB46FC008868A8 /* MagicGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF21E29C1BAB46FC008868A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF21E29D1BAB46FC008868A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 			children = (
 				CF21E29C1BAB46FC008868A8 /* Info.plist */,
 				CF21E29D1BAB46FC008868A8 /* main.m */,
+				CF0C28121BABA088003E0302 /* Suites.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

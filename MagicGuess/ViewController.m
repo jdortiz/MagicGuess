@@ -28,6 +28,7 @@
 - (void) viewDidLoad {
     [super viewDidLoad];
     self.motionController = [[MotionController alloc] init];
+    self.motionController.delegate = self;
 }
 
 
@@ -43,10 +44,18 @@
 }
 
 
+#pragma mark - Motion Controller Delegate
+
+- (void) motionController:(MotionController *)motionController result:(Suit)suit {
+    [self.canvasView loadPathForSuit:suit];
+}
+
+
 #pragma mark - UI Actions
 
 - (IBAction) clearCanvas:(id)sender {
     [self.canvasView clear];
+    [self.motionController startMeasuringPosition];
 }
 
 @end

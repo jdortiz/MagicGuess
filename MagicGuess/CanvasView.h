@@ -8,10 +8,12 @@
 
 
 #import <UIKit/UIKit.h>
+#import "Suites.h"
 
 
 @interface CanvasView : UIView
 
+- (void) loadPathForSuit:(Suit)suit;
 - (void) clear;
 
 @end

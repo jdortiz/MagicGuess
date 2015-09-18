@@ -8,10 +8,24 @@
 
 
 #import <Foundation/Foundation.h>
+#import "Suites.h"
+
+
+@protocol MotionControllerResultsDelegate;
+
 
 @interface MotionController : NSObject
 
+@property (weak, nonatomic) id<MotionControllerResultsDelegate> delegate;
+
 - (void) startMeasuringPosition;
 - (void) stopMeasuringPosition;
+
+@end
+
+
+@protocol MotionControllerResultsDelegate <NSObject>
+
+- (void) motionController:(MotionController *)motionController result:(Suit)suit;
 
 @end
